@@ -20,5 +20,6 @@ public class SecondMax{
             }
         }
         System.out.println("Second max: "+sec_max);
+        sc.close();
     }
 }

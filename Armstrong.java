@@ -24,7 +24,7 @@ public class Armstrong
             System.out.println("\n Number is not armstrong");
         }
         
-
+       sc.close();;
 
     }
 }

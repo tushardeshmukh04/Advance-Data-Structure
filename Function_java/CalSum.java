@@ -12,7 +12,7 @@ public class CalSum {
         System.out.print("\nEnter the value of b: ");
         int b = sc.nextInt();
         CALSUM(a,b);
-        int area = 
         sc.close();
+        
     }
 }

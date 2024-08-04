@@ -14,5 +14,6 @@ public class BinDec {
             num2 = num2 / 10;
         }
         System.out.println("Decimal Number is :"+dec);
+        sc.close();
     }
 }

@@ -22,6 +22,6 @@ public class BasicSalary
         System.out.println("\n Total salary of employee :" +total_salary) ;
         System.out.println("\n Tax on total salary : " +tax) ;
         System.out.println("\n Gross salary of employee :" +gross_salary);
-
+        sc.close();
     }
 }

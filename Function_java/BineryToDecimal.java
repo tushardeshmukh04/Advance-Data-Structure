@@ -2,16 +2,17 @@ package Function_java;
 
 import java.util.Scanner;
 
-public class BinToDec {
+public class BineryToDecimal {
     public static int BinNum(int num){
+        int num2 = num;
         int pow = 0;
         int lastDigit ;
         int decNum = 0;
-        while(num > 0){
-            lastDigit = num % 10 ;
+        while(num2 > 0){
+            lastDigit = num2 % 10 ;
             decNum = decNum + (lastDigit * (int)Math.pow(2,pow));
             pow ++;
-            num = num / 10;
+            num2 = num2 / 10;
         }
         return decNum;
     }
@@ -19,7 +20,7 @@ public class BinToDec {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter thr binery number :");
         int num = sc.nextInt();
-        System.out.println("Decimal number is :"+ BinNum(num));
+        System.out.println("Decimal number of "+num+"="+ BinNum(num));
         sc.close();
     }
 }
