@@ -1,4 +1,4 @@
-package ArrayInJava;
+package ArrayInJava.SubarraysInJava;
 
 public class subarrays {
     public static void printSubarrays(int[] arr){

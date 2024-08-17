@@ -1,4 +1,4 @@
-package ArrayInJava;
+package ArrayInJava.SubarraysInJava;
 
 public class prefixSumOfSubarrays {
     public  static void maxSubarraysSum(int[] arr){
