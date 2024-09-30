@@ -2,8 +2,9 @@ package BitManipulation;
 
 public class evenOrOddNumber {
     public static boolean checkNoIsEvenOrOdd(int number) {
-       //odd case
-        if((number & 1) == 0) {
+        int bitMask = 1;
+        //odd case
+        if((number & bitMask) == 0) {
            return true;
         }
 
@@ -11,10 +12,10 @@ public class evenOrOddNumber {
     }
     public static void main(String[] args) {
         if(checkNoIsEvenOrOdd(7)) {
-            System.out.println("number is prime");
+            System.out.println("number is even");
         }
         else {
-            System.out.println("number is not prime");
+            System.out.println("number is odd");
         }
     }
 }
