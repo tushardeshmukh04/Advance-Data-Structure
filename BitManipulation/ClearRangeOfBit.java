@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class clearRangeOfBit {
+public class ClearRangeOfBit {
     public static int clearBitInRange(int n, int i, int j) {
         int a = (-1)<<j+1;
         int b = (1<<i)-1;

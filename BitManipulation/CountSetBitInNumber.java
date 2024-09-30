@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class countSetBitInNumber {
+public class CountSetBitInNumber {
     public static int countSetbit(int n) {
         int count = 0;
         while(n > 0) {

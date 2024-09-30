@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class clearLastIthBit {
+public class ClearLastIthBit {
     public static int clearLastBit(int n, int i) {
         int bitMask = (-1)<<i;
         return n & bitMask;

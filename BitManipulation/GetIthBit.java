@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class getIthBit {
+public class GetIthBit {
     public static int getBit(int n, int i) {
         int bitMask = 1<<i;
         return n & bitMask;

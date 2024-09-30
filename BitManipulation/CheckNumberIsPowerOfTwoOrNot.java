@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class checkNumberIsPowerOfTwoOrNot {
+public class CheckNumberIsPowerOfTwoOrNot {
     public static boolean numberIsPowerOfTwo(int number) {
         return (number & (number - 1)) == 0;
     }

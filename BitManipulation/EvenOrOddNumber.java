@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class evenOrOddNumber {
+public class EvenOrOddNumber {
     public static boolean checkNoIsEvenOrOdd(int number) {
         int bitMask = 1;
         //odd case
