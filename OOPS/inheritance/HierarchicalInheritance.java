@@ -6,7 +6,6 @@ public class HierarchicalInheritance {
          Tesla t1 = new Tesla();
          t1.autopilot();
          t1.run();
-         t1.name = "Cars";
          System.out.println("--------Thar------");
          Thar t2 = new Thar();
          t2.offRoadCapability();
@@ -18,7 +17,6 @@ public class HierarchicalInheritance {
     }
 }
 class Car {
-    String name;
     void run(){
         System.out.println("can Run");
     }
