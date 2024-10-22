@@ -2,7 +2,7 @@ package OOPS.inheritance;
 
 public class HierarchicalInheritance {
     public static void main(String[] args) {
-         System.out.println("--------Tesla------");
+         System.out.println("--------Tesla-----");
          Tesla t1 = new Tesla();
          t1.autopilot();
          t1.run();

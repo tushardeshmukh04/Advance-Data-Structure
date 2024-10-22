@@ -2,10 +2,10 @@ package OOPS.inheritance;
 
 public class SingleLevelInheritance {
     public static void main(String[] args) {
-        Fish f1 = new Fish();
-        f1.swim();
-        f1.eat();
-        f1.breathe();
+        Fish f = new Fish();
+        f.swim();
+        f.eat();
+        f.breathe();
     }
 }
 class Animal {
