@@ -1,6 +1,6 @@
 package Recursion;
 
-public class PrintNumbers {
+public class PrintNumbersInDecreasing {
     public static void numbers(int n) {
         if (n == 1) {
             System.out.println(n + " ");
