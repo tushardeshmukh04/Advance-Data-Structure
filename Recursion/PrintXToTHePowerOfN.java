@@ -1,6 +1,6 @@
 package Recursion;
 
-public class PrintXToThePowerN {
+public class PrintXToTHePowerOfN {
     public static int printPower(int x, int n) {
         // time complexity = O(N);
         if(n == 0){
