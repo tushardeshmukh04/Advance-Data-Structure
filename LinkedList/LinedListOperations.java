@@ -68,27 +68,67 @@ public class LinedListOperations {
 
     // Print the linkedList
 
-    public void Print(){
+    public void print(){
         if(head == null){
             System.out.print("LinedList is empty");
         }
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("null");
     }
-
+    public int removeFirst(){
+         if(size == 0){
+             System.out.println("LL is empty");
+             return Integer.MIN_VALUE;
+         } else if (size == 1) {
+             int val = head.data;
+             head = tail = null;
+             size = 0;
+             return  val;
+         }
+         int val = head.data;
+         head = head.next;
+         size--;
+         return val;
+    }
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        } else if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return  val;
+        }
+        // prev = size - 2;
+        Node prev = head;
+        for(int i = 0; i < size - 2; i++){
+            prev = prev.next;
+        }
+        int val = prev.next.data;
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
         LinedListOperations ll = new LinedListOperations();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(3);
         ll.addLast(4);
-        ll.Print();
+        ll.print();
         ll.addMiddle(2, 9);
-        ll.Print();
+        ll.print();
+        System.out.println("size of linkedlist: " + size);
+        ll.removeFirst();
+        ll.print();
+        ll.removeLast();
+        ll.print();
         System.out.println("size of linkedlist: " + size);
     }
 }
