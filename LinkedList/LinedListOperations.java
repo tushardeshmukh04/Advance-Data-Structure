@@ -115,14 +115,62 @@ public class LinedListOperations {
         size--;
         return val;
     }
+    // Iterative Search
+    public int itrSearch(int key){
+        Node temp = head;
+        int i = 0;
+        while(temp.next != null){
+            if(temp.data == key){
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
+    // Recursive Search
+    public int helper(Node head, int key){
+        if(head == null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if(idx == -1){
+            return -1;
+        }
+        return idx + 1;
+    }
+    public int recSearch(int key){
+        return helper(head, key);
+
+    }
+    // Reverse Linked List
+    public void reverse(){
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
     public static void main(String[] args) {
         LinedListOperations ll = new LinedListOperations();
-        ll.addFirst(2);
         ll.addFirst(1);
+        ll.addFirst(9);
         ll.addLast(3);
         ll.addLast(4);
+        ll.addLast(5);
+        ll.addLast(6);
         ll.print();
-        ll.addMiddle(2, 9);
+        ll.addMiddle(2, 2);
         ll.print();
         System.out.println("size of linkedlist: " + size);
         ll.removeFirst();
@@ -130,5 +178,9 @@ public class LinedListOperations {
         ll.removeLast();
         ll.print();
         System.out.println("size of linkedlist: " + size);
+        System.out.println(ll.itrSearch(9));
+        System.out.println(ll.recSearch(4));
+        ll.reverse();
+        ll.print();
     }
 }
