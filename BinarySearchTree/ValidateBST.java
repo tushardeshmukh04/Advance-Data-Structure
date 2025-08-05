@@ -1,4 +1,4 @@
-import BinarySearchTree.BuildATree;
+package BinarySearchTree;
 
 public class ValidateBST {
     static class Node {
